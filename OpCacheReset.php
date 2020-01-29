@@ -4,15 +4,11 @@ namespace App;
 
 require 'vendor/autoload.php';
 
-use Dotenv\Dotenv;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
-
-$dotenv = new Dotenv(__DIR__);
-$dotenv->load();
 
 try {
     $client = new Client([
